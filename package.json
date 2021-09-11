@@ -1,0 +1,8 @@
+{
+  "name": "model-viewer-first",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/niek-ilias/model-viewer-first",
+  "author": "niek-ilias <niek.freriks@ilias-solutions.com>",
+  "license": "MIT"
+}
