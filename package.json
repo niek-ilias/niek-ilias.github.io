@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/niek-ilias/model-viewer-first",
   "author": "niek-ilias <niek.freriks@ilias-solutions.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@google/model-viewer": "^1.8.0",
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0"
+  }
 }
