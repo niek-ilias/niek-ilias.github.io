@@ -28,7 +28,7 @@
         // Next, we loop through all of these worksheets and add buttons for each one
         worksheets.forEach(function(worksheet) {
             // Declare our new button which contains the sheet name
-            const button = $("<button class='tooltip' slot='hotspot-bad' data-position='10.218644074618673m 4.1830742704891755m 18.501188507330312m' data-normal='-0.13052565018800494m -0.0000014355391548968135m 0.9914449327324932m'><span class='tooltiptext'>Pressure Valve Failure</span></button>");
+            const button = $("<button></button>");
             button.text(worksheet.name);
 
             // Create an event handler for when this button is clicked
