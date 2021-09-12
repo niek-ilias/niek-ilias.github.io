@@ -19,6 +19,7 @@
 
             // Add our button to the list of worksheets to choose from
             $('#buttons').append(button);
+            
         });
 
         });
