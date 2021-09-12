@@ -31,14 +31,10 @@
             const button = $("<button></button>");
             button.text(worksheet.name);
 
-            });
-
             // Add our button to the list of worksheets to choose from
             $('#choose_sheet_buttons').append(button);
         });
 
-        // Show the dialog
-        $('#choose_sheet_dialog').modal('toggle');
     }
 
 })();
