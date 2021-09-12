@@ -12,13 +12,13 @@
 
         // Next, we loop through all of these worksheets and add buttons for each one
         worksheets.forEach(function(worksheet) {
-            
+
             // Declare our new button which contains the sheet name
             const button = $("<button></button>");
             button.text(worksheet.name);
 
             // Add our button to the list of worksheets to choose from
-            $('#choose_sheet_buttons').append(button);
+            $('#buttons').append(button);
         });
 
         });
