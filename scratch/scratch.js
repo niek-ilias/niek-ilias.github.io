@@ -31,14 +31,6 @@
             const button = $("<button></button>");
             button.text(worksheet.name);
 
-            // Create an event handler for when this button is clicked
-            button.click(function() {
-                // Get the worksheet name which was selected
-                const worksheetName = worksheet.name;
-
-                // Close the dialog and show the data table for this worksheet
-                $('#choose_sheet_dialog').modal('toggle');
-                loadSelectedMarks(worksheetName);
             });
 
             // Add our button to the list of worksheets to choose from
