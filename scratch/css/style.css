@@ -29,9 +29,8 @@ model-viewer {
   :not(:defined) > * {
     display: none;
   }
-  
 
- .tooltiptext {
+  .button .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -50,7 +49,7 @@ model-viewer {
   transition: opacity 1s;
 }
 
-.tooltip:hover .tooltiptext {
+.button:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
