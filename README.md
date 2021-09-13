@@ -1,1 +1,1 @@
-My first tableau extension with a 3d model
+Trying to create a Tableau extension with a 3D model
