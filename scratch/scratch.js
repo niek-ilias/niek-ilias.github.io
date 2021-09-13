@@ -1,5 +1,8 @@
 'use strict';
 
+const button = $("<button></button>");
+button.text("Niek1");
+
 // Wrap everything in an anonymous function to avoid polluting the global namespace
 (function() {
 
