@@ -4,7 +4,7 @@ model-viewer {
     margin: 0;
   }
 
-  button{
+  .button{
     display: block;
     width: 10px;
     height: 10px;
@@ -13,11 +13,15 @@ model-viewer {
     box-sizing: border-box;
   }
 
-  button[slot="hotspot-good"]{
+  .button[kpi="green"]{
     background-color: green;
   }
 
-  button[slot="hotspot-bad"]{
+  .button[kpi="orange"]{
+    background-color: orange;
+  }
+
+  .button[kpi="red"]{
     background-color: red;
   }
 
@@ -26,13 +30,8 @@ model-viewer {
     display: none;
   }
   
-  .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
 
-.tooltip .tooltiptext {
+ .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
