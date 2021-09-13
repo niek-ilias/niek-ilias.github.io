@@ -22,7 +22,7 @@
         // Next, we loop through all of these worksheets and add buttons for each one
         worksheets.forEach(function(worksheet) {
             // Declare our new button which contains the sheet name
-            const button = $("<button></button>");
+            const button = $("<button class='Hotspot' slot='hotspot-good' data-position='0.06789274904367737m 1.9420006412557558m -6.117739169877176m' data-normal='0.9997936950666919m 0.020276126701468552m -0.0012024936077523953m' data-visibility-attribute='visible'></button>");
             button.text(worksheet.name);
 
             // Add our button to the list of worksheets to choose from
