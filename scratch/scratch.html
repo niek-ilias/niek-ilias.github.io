@@ -12,18 +12,17 @@
     <script src="scratch.js"></script>
 
     <!--Model viewer javascript to display 3D model-->
-    <script type="module" src="/model-viewer/js/model-viewer.min.js"></script>
+    <script type="module" src="model-viewer.min.js"></script>
 
     <!--Styling to make the model viewer fill the space-->
-    <link rel="stylesheet" href="/model-viewer/css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     
     <!--This is the model-viewer element that will display the 3D model, the id is used by the javascript to append and add buttons to -->
-    <model-viewer id="choose_sheet_buttons" src="/model-viewer/models/F-16D.gltf" exposure="0.3" id="reveal" loading="eager" camera-controls auto-rotate>
-    </model-viewer>
+    <model-viewer id="model-viewer" src="models/F-16D.gltf" exposure="0.3" id="reveal" loading="eager" camera-controls auto-rotate></model-viewer>
 
 </body>
 
