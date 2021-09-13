@@ -3,8 +3,21 @@
 // Wrap everything in an anonymous function to avoid polluting the global namespace
 (function() {
 
+
+    const button = $("<button></button>");
+    button.text("Niek1");
+
+    // Add our button to the list of worksheets to choose from
+    $('#buttons').append(button);
+
     // Use the jQuery document ready signal to know when everything has been initialized
     $(document).ready(function() {
+
+        const button = $("<button></button>");
+        button.text("Niek2");
+
+        // Add our button to the list of worksheets to choose from
+        $('#buttons').append(button);
 
         // Tell Tableau we'd like to initialize our extension
         tableau.extensions.initializeAsync().then(function() {
@@ -16,11 +29,11 @@
             worksheets.forEach(function(worksheet) {
 
                 // Declare our new button which contains the sheet name
-                const button = $("<button type='button' class='btn btn-default btn-block'></button>");
-                button.text(worksheet.name);
+                const button = $("<button></button>");
+                button.text("Niek3");
 
                 // Add our button to the list of worksheets to choose from
-                $('#choose_sheet_buttons').append(button);
+                $('#buttons').append(button);
                 
             });
 
