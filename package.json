@@ -8,6 +8,8 @@
   "dependencies": {
     "@google/model-viewer": "^1.8.0",
     "bootstrap": "^5.1.1",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jquery-sortable": "^0.9.13",
+    "materialize-css": "^1.0.0"
   }
 }
