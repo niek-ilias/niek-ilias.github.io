@@ -7,7 +7,7 @@
        <author name="Niek Freriks" email="niek.freriks@ilias-solutions.com" organization="ILIAS Solutions" website="https://www.ilias-solutions.com"/>
        <min-api-version>1.0</min-api-version>
        <source-location>
-         <url>http://localhost:8080/scratch/scratch.html</url>
+         <url>https://niek-ilias.github.io/scratch/scratch.html</url>
        </source-location>
        <icon>
        </icon>
