@@ -8,7 +8,7 @@ model-viewer {
     display: block;
     width: 20px;
     height: 20px;
-    border-radius: 10x;
+    border-radius: 50%;
     border: none;
     box-sizing: border-box;
   }
