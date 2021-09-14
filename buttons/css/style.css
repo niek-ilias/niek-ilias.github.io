@@ -6,8 +6,8 @@ model-viewer {
 
   .workarea{
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 10x;
     border: none;
     box-sizing: border-box;
@@ -23,6 +23,10 @@ model-viewer {
 
   .workarea[kpi="red"]{
     background-color: red;
+  }
+
+  .workarea[kpi="unknown"]{
+    background-color: grey;
   }
 
   /* This keeps child nodes hidden while the element loads */
