@@ -27,7 +27,7 @@
         worksheetData.forEach(function(row) {
 
             // Declare our new button which contains the sheet name
-            const button = $("<button class='workarea' kpi='"+row[4].value+"' slot='hotspot-"+row[0].value+"' data-position='"+row[1].value+"' data-normal='"+row[2].value+"' data-visibility-attribute='invisible'>"+row[0].value+"</button>");
+            const button = $("<button class='workarea' kpi='"+row[4].value+"' slot='hotspot-"+row[0].value+"' data-position='"+row[1].value+"' data-normal='"+row[2].value+"' data-visibility-attribute='invisible'><div class='tooltiptext'>"+row[0].value+"</div></button>");
   
             // Add our button to the list of worksheets to choose from
             $('#model-viewer').append(button); 
