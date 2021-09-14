@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.21.0709.1556                               -->
+<workbook source-build='2020.3.11 (20203.21.0709.1556)' source-platform='win' version='18.1' xml:base='https://is005vs03059.dev.ilias.local' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Buttons' path='/t/DCM20212DEV/workbooks' revision='1.0' site='DCM20212DEV' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Issues+ (Workbook Data)' inline='true' name='federated.0h9dtho1vt9z02162ip6y06h529o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Workbook Data' name='excel-direct.0tr0x7q0pgsdlr10yashw0l7gplo'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/freriksn/OneDrive - ILIAS Solutions NV/Documenten/Extension Development/niek-ilias.github.io/3d-asset/documents/Workbook Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0tr0x7q0pgsdlr10yashw0l7gplo' name='Issues' table='[Issues$]' type='table'>
+          <columns gridOrigin='A1:C7:no:A1:C7:0' header='yes' outcome='6'>
+            <column datatype='string' name='Work Area' ordinal='0' />
+            <column datatype='string' name='Impact' ordinal='1' />
+            <column datatype='integer' name='Work Order' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0tr0x7q0pgsdlr10yashw0l7gplo' name='Issues' table='[Issues$]' type='table'>
+            <columns gridOrigin='A1:C7:no:A1:C7:0' header='yes' outcome='6'>
+              <column datatype='string' name='Work Area' ordinal='0' />
+              <column datatype='string' name='Impact' ordinal='1' />
+              <column datatype='integer' name='Work Order' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0tr0x7q0pgsdlr10yashw0l7gplo' name='Work Area' table='[&apos;Work Area$&apos;]' type='table'>
+            <columns gridOrigin='A1:C7:no:A1:C7:0' header='yes' outcome='6'>
+              <column datatype='string' name='Work Area' ordinal='0' />
+              <column datatype='string' name='Data Position' ordinal='1' />
+              <column datatype='string' name='Normal Position' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Data Position]' value='[Work Area].[Data Position]' />
+          <map key='[Impact]' value='[Issues].[Impact]' />
+          <map key='[Normal Position]' value='[Work Area].[Normal Position]' />
+          <map key='[Work Area (Work Area)]' value='[Work Area].[Work Area]' />
+          <map key='[Work Area]' value='[Issues].[Work Area]' />
+          <map key='[Work Order]' value='[Issues].[Work Order]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Issues]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C7:no:A1:C7:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Work Area]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C7:no:A1:C7:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Work Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Work Area]</local-name>
+            <parent-name>[Issues]</parent-name>
+            <remote-alias>Work Area</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Issues_FF3FFA9074D44B8EA155ECB09DAE7952]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impact</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Impact]</local-name>
+            <parent-name>[Issues]</parent-name>
+            <remote-alias>Impact</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Issues_FF3FFA9074D44B8EA155ECB09DAE7952]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Work Order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Work Order]</local-name>
+            <parent-name>[Issues]</parent-name>
+            <remote-alias>Work Order</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Issues_FF3FFA9074D44B8EA155ECB09DAE7952]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Work Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Work Area (Work Area)]</local-name>
+            <parent-name>[Work Area]</parent-name>
+            <remote-alias>Work Area</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work Area_C8348EA7E3FE4872900D413AC4AC239E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data Position</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Data Position]</local-name>
+            <parent-name>[Work Area]</parent-name>
+            <remote-alias>Data Position</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work Area_C8348EA7E3FE4872900D413AC4AC239E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Normal Position</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Normal Position]</local-name>
+            <parent-name>[Work Area]</parent-name>
+            <remote-alias>Normal Position</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work Area_C8348EA7E3FE4872900D413AC4AC239E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Tooltip' datatype='string' name='[Calculation_2378463570530439168]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Hello Tooltip&quot;' />
+      </column>
+      <column caption='KPI' datatype='string' name='[Calculation_3423861633725444096]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='CASE&#13;&#10;MIN(&#13;&#10;IF [Impact] = &apos;NMC&apos; THEN 0&#13;&#10;ELSEIF [Impact] = &apos;PMC&apos; THEN 1&#13;&#10;ELSEIF [Impact] = &apos;FMC&apos; THEN 2&#13;&#10;END&#13;&#10;)&#13;&#10;WHEN 0 THEN &apos;red&apos;&#13;&#10;WHEN 1 THEN &apos;orange&apos;&#13;&#10;WHEN 2 THEN &apos;green&apos;&#13;&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Issues' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[Issues_FF3FFA9074D44B8EA155ECB09DAE7952]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Work Area1' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[Work Area_C8348EA7E3FE4872900D413AC4AC239E]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_3423861633725444096]' derivation='User' name='[usr:Calculation_3423861633725444096:nk]' pivot='key' type='nominal' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='fact' role='dimensions'>
+        <folder-item name='[Impact]' type='field' />
+        <folder-item name='[Work Area (Work Area)]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='fact' role='measures'>
+        <folder-item name='[Work Order]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='hotspot' role='dimensions'>
+        <folder-item name='[Data Position]' type='field' />
+        <folder-item name='[Normal Position]' type='field' />
+        <folder-item name='[Work Area]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='hotspot' role='measures'>
+        <folder-item name='[Calculation_3423861633725444096]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='fact'>
+          <folder-item name='[Impact]' type='field' />
+          <folder-item name='[Work Area (Work Area)]' type='field' />
+          <folder-item name='[Work Order]' type='field' />
+        </folder>
+        <folder name='hotspot'>
+          <folder-item name='[Calculation_3423861633725444096]' type='field' />
+          <folder-item name='[Data Position]' type='field' />
+          <folder-item name='[Normal Position]' type='field' />
+          <folder-item name='[Work Area]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_3423861633725444096:nk]' type='palette'>
+            <map to='#309143'>
+              <bucket>&quot;green&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;red&quot;</bucket>
+            </map>
+            <map to='#e39802'>
+              <bucket>&quot;orange&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Netherlands&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Issues' id='Issues_FF3FFA9074D44B8EA155ECB09DAE7952'>
+            <properties context=''>
+              <relation connection='excel-direct.0tr0x7q0pgsdlr10yashw0l7gplo' name='Issues' table='[Issues$]' type='table'>
+                <columns gridOrigin='A1:C7:no:A1:C7:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Work Area' ordinal='0' />
+                  <column datatype='string' name='Impact' ordinal='1' />
+                  <column datatype='integer' name='Work Order' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Work Area1' id='Work Area_C8348EA7E3FE4872900D413AC4AC239E'>
+            <properties context=''>
+              <relation connection='excel-direct.0tr0x7q0pgsdlr10yashw0l7gplo' name='Work Area' table='[&apos;Work Area$&apos;]' type='table'>
+                <columns gridOrigin='A1:C7:no:A1:C7:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Work Area' ordinal='0' />
+                  <column datatype='string' name='Data Position' ordinal='1' />
+                  <column datatype='string' name='Normal Position' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Work Area]' />
+              <expression op='[Work Area (Work Area)]' />
+            </expression>
+            <first-end-point object-id='Issues_FF3FFA9074D44B8EA155ECB09DAE7952' />
+            <second-end-point object-id='Work Area_C8348EA7E3FE4872900D413AC4AC239E' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hotspot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Issues+ (Workbook Data)' name='federated.0h9dtho1vt9z02162ip6y06h529o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h9dtho1vt9z02162ip6y06h529o'>
+            <column caption='Tooltip' datatype='string' name='[Calculation_2378463570530439168]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Hello Tooltip&quot;' />
+            </column>
+            <column caption='KPI' datatype='string' name='[Calculation_3423861633725444096]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='CASE&#13;&#10;MIN(&#13;&#10;IF [Impact] = &apos;NMC&apos; THEN 0&#13;&#10;ELSEIF [Impact] = &apos;PMC&apos; THEN 1&#13;&#10;ELSEIF [Impact] = &apos;FMC&apos; THEN 2&#13;&#10;END&#13;&#10;)&#13;&#10;WHEN 0 THEN &apos;red&apos;&#13;&#10;WHEN 1 THEN &apos;orange&apos;&#13;&#10;WHEN 2 THEN &apos;green&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Data Position]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Impact]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Normal Position]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Work Area]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2378463570530439168]' derivation='None' name='[none:Calculation_2378463570530439168:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Data Position]' derivation='None' name='[none:Data Position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Normal Position]' derivation='None' name='[none:Normal Position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Work Area]' derivation='None' name='[none:Work Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3423861633725444096]' derivation='User' name='[usr:Calculation_3423861633725444096:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0h9dtho1vt9z02162ip6y06h529o].[none:Normal Position:nk]' value='476' />
+            <format attr='height-header' value='20' />
+            <format attr='width' field='[federated.0h9dtho1vt9z02162ip6y06h529o].[none:Data Position:nk]' value='340' />
+            <format attr='width' field='[federated.0h9dtho1vt9z02162ip6y06h529o].[none:Work Area:nk]' value='128' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0h9dtho1vt9z02162ip6y06h529o].[none:Work Area:nk] / ([federated.0h9dtho1vt9z02162ip6y06h529o].[none:Data Position:nk] / ([federated.0h9dtho1vt9z02162ip6y06h529o].[none:Normal Position:nk] / ([federated.0h9dtho1vt9z02162ip6y06h529o].[none:Calculation_2378463570530439168:nk] / [federated.0h9dtho1vt9z02162ip6y06h529o].[usr:Calculation_3423861633725444096:nk]))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{121D449B-466F-47E8-84C7-4A63EC2E233B}' />
+    </worksheet>
+    <worksheet name='dsds'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7F3D3866-33D9-4D03-9436-54823A9A7C46}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Buttons'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98650' id='7' layout-strategy-id='distribute-evenly' param='horz' w='98130' x='935' y='675'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98650' id='5' w='98130' x='935' y='675'>
+              <zone h='98650' id='3' name='Hotspot' w='81672' x='17393' y='675'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98650' id='12' name='dsds' w='16458' x='935' y='675'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='10' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98734' id='9' param='vert' w='99318' x='341' y='633'>
+                <zone fixed-size='280' h='49367' id='3' is-fixed='true' name='Hotspot' w='99318' x='341' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D980557A-15BE-4B4E-8FF9-372E668B42C1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Buttons'>
+      <viewpoints>
+        <viewpoint name='Hotspot'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='dsds' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{52AB32D2-F395-41A7-9676-28F3FB0ECDF6}' />
+    </window>
+    <window class='worksheet' name='dsds'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{11BA8575-EFFB-437C-BDD0-2976E7CAD174}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Hotspot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03EFE17A-6DEB-40CA-B794-F30B7C576CF8}' />
+    </window>
+  </windows>
+</workbook>

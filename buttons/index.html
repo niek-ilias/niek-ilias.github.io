@@ -8,11 +8,21 @@
     <!--Tableau extension API to communicate with workbook-->
     <script src="js/tableau.extensions.1.latest.min.js"></script>
 
+    <!--Get the custom js-->
+    <script src="js/buttons.js"></script>
+
+    <!--Model viewer javascript to display 3D model-->
+    <script type="module" src="js/model-viewer.min.js"></script>
+
+    <!--Styling to make the model viewer fill the space-->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-        Hallo wouter
-<div id="buttons"></div>
+    
+        <model-viewer id="model-viewer" src="models/F-16D.gltf" exposure="0.1" id="reveal" loading="eager" camera-controls auto-rotate>
+        </model-viewer>
 
 </body>
 
