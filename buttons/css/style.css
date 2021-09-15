@@ -9,7 +9,7 @@ model-viewer {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: none;
+    border: 2px solid white;
     box-sizing: border-box;
     color: white;
     font-weight: bold;
