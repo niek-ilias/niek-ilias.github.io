@@ -45,17 +45,18 @@
 
                 // Declare our new button which contains the data for the selected row
                 // The columns in the sheet hotspot must be in the order below
+                // Can be improved by using the getSummaryColumnsInfoAsync function to get the index
                 // Column 0 is the Work Area
                 // Column 1 is the Data Position
                 // Column 2 is the Data Noraml
                 // Column 3 is the Tooltip Text
-                // Column 4 is the KPI Color
-                // Column 5 is the KPI Number
-                const button = $("<button class='workarea' kpi='"+row[4].value
+                // Column 4 is the KPI Number
+                // Column 5 is the KPI Color
+                const button = $("<button class='workarea' kpi='"+row[5].value
                                 +"' slot='hotspot-"+row[0].value
                                 +"' data-position='"+row[1].value
                                 +"' data-normal='"+row[2].value
-                                +"' data-visibility-attribute='invisible'>"+row[5].value
+                                +"' data-visibility-attribute='invisible'>"+row[4].value
                                 +"<div class='tooltiptext'>"+row[3].value
                                 +"</div></button>");
     
