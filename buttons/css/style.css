@@ -6,14 +6,13 @@ model-viewer {
 
   .workarea{
     display: block;
-    width: 20px;
-    height: 20px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 1px solid white;
     box-sizing: border-box;
     color: white;
     font-weight: bold;
     text-align: center;
+    width: 100%;
   }
 
   .workarea[kpi="green"]{
