@@ -10,8 +10,6 @@
             // Once the extension is initialized, ask the user to choose a sheet
             createButtons();
 
-            initializeButtons();
-
             // Remove all buttons and recreate them based on new sheet
             const worksheet = getSelectedSheet('Hotspot');
             worksheet.addEventListener(tableau.TableauEventType.FilterChanged, function(){
