@@ -14,10 +14,11 @@
 
             // Remove all buttons and recreate them based on new sheet
             const worksheet = getSelectedSheet('Hotspot');
-            worksheet.addEventListener(tableau.TableauEventType.FilterChanged, function(event){
+            worksheet.addEventListener(tableau.TableauEventType.FilterChanged, function(){
                 document.getElementById("model-viewer").innerHTML = "";
                 createButtons();
             });
+            
         });
     });
 
