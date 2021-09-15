@@ -19,10 +19,15 @@
         });
     });
 
-    
-    /**
-     * Shows the choose sheet UI. Once a sheet is selected, the data table for the sheet is shown
-     */
+    // This function gets the worksheet
+    function getSelectedSheet(worksheetName) {
+
+        return tableau.extensions.dashboardContent.dashboard.worksheets.find(function(sheet) {
+            return sheet.name === worksheetName;
+        });
+    }
+   
+     // This function creates a button for each row in the sheet
     function createButtons() {
 
         // The first step in choosing a sheet will be asking Tableau what sheets are available
@@ -33,26 +38,19 @@
         // Get the first DataTable for our selected marks (usually there is just one)
         const worksheetData = sumdata.data;
 
-        // For each row in this table we wil now use the columns to populate the buttons
-        worksheetData.forEach(function(row) {
+            // For each row in this table we wil now use the columns to populate the buttons
+            worksheetData.forEach(function(row) {
 
-            // Declare our new button which contains the selected columns
-            const button = $("<button class='workarea' kpi='"+row[4].value+"' slot='hotspot-"+row[0].value+"' data-position='"+row[1].value+"' data-normal='"+row[2].value+"' data-visibility-attribute='invisible'><div class='tooltiptext'>"+row[3].value+"</div></button>");
-  
-            // Add our button to the model-viewer
-            $('#model-viewer').append(button);
+                // Declare our new button which contains the selected columns
+                const button = $("<button class='workarea' kpi='"+row[4].value+"' slot='hotspot-"+row[0].value+"' data-position='"+row[1].value+"' data-normal='"+row[2].value+"' data-visibility-attribute='invisible'>2<div class='tooltiptext'>"+row[3].value+"</div></button>");
+    
+                // Add our button to the model-viewer 
+                $('#model-viewer').append(button);
+
+            });
 
         });
-
-             });
         
-    }
-
-    function getSelectedSheet(worksheetName) {
-        // Go through all the worksheets in the dashboard and find the one we want
-        return tableau.extensions.dashboardContent.dashboard.worksheets.find(function(sheet) {
-            return sheet.name === worksheetName;
-        });
     }
 
 })();
