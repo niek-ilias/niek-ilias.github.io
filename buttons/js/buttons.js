@@ -18,17 +18,9 @@
                 document.getElementById("model-viewer").innerHTML = "";
                 createButtons();
             });
-            
+
         });
     });
-
-    // This function gets the worksheet
-    function getSelectedSheet(worksheetName) {
-
-        return tableau.extensions.dashboardContent.dashboard.worksheets.find(function(sheet) {
-            return sheet.name === worksheetName;
-        });
-    }
    
      // This function creates a button for each row in the sheet
     function createButtons() {
@@ -68,6 +60,14 @@
 
         });
         
+    }
+    
+    // This function gets the worksheet
+    function getSelectedSheet(worksheetName) {
+
+        return tableau.extensions.dashboardContent.dashboard.worksheets.find(function(sheet) {
+            return sheet.name === worksheetName;
+        });
     }
 
 })();
