@@ -13,6 +13,7 @@ model-viewer {
     box-sizing: border-box;
     color: white;
     font-weight: bold;
+    text-align: center;
   }
 
   .workarea[kpi="green"]{
