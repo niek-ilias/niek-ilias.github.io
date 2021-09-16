@@ -52,11 +52,18 @@
                                 +"</div></button>");
     
                 // Add our button to the model-viewer 
+                button.click(filterWorkarea);
                 $('#model-viewer').append(button);
 
             });
 
         });
+
+        function filterWorkarea(event) {
+            const worksheet = getSelectedSheet('Hotspot');
+            worksheet.applyFilterAsync('Work Area',['Canopy'],'replace')
+
+        }
         
     }
     
