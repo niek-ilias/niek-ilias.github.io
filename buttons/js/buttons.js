@@ -3,6 +3,8 @@
 // Wrap everything in an anonymous function to avoid polluting the global namespace
 (function() {
 
+    const clearButton
+
     // Use the jQuery document ready signal to know when everything has been initialized
     $(document).ready(function() {
         // Tell Tableau we'd like to initialize our extension
@@ -26,7 +28,7 @@
         // The first step in choosing a sheet will be asking Tableau what sheets are available
         const worksheet = getSelectedSheet('Hotspot');
 
-        const clearButton = $("<button id='clearbutton'>Clear Filters</button>");
+        clearButton = $("<button style='visibility:hidden' id='clearbutton'>Clear Filters</button>");
 
         // Call to get the selected marks for our sheet
         worksheet.getSummaryDataAsync().then(function(sumdata) {
@@ -73,7 +75,8 @@
 
     function filterWorkarea(event) {
         const worksheet = getSelectedSheet('Work Orders');
-        worksheet.applyFilterAsync('Work Area',[event.target.name],'replace')
+        worksheet.applyFilterAsync('Work Area',[event.target.name],'replace');
+        clearButton.style.visibility ='visible';
 
     }
 
