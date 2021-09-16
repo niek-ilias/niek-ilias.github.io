@@ -3,8 +3,6 @@
 // Wrap everything in an anonymous function to avoid polluting the global namespace
 (function() {
 
-    const clearButton
-
     // Use the jQuery document ready signal to know when everything has been initialized
     $(document).ready(function() {
         // Tell Tableau we'd like to initialize our extension
@@ -21,14 +19,18 @@
 
         });
     });
+
+    const clearButton = $("<button style='visibility:hidden' id='clearbutton'>Clear Filters</button>");
+
+    // Add our button to the model-viewer 
+    clearButton.click(clearWorkarea);
+    $('#model-viewer').append(clearButton);
    
      // This function creates a button for each row in the sheet
     function createButtons() {
 
         // The first step in choosing a sheet will be asking Tableau what sheets are available
         const worksheet = getSelectedSheet('Hotspot');
-
-        clearButton = $("<button style='visibility:hidden' id='clearbutton'>Clear Filters</button>");
 
         // Call to get the selected marks for our sheet
         worksheet.getSummaryDataAsync().then(function(sumdata) {
@@ -65,12 +67,6 @@
 
         });
 
-        // Add our button to the model-viewer 
-        clearButton.click(clearWorkarea);
-        $('#model-viewer').append(clearButton);
-
-     
-        
     }
 
     function filterWorkarea(event) {
