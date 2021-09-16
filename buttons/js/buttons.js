@@ -45,6 +45,7 @@
                 // Column 5 is the KPI Color
                 const button = $("<button class='workarea' kpi='"+row[5].value
                                 +"' slot='hotspot-"+row[0].value
+                                +"' workarea='"+row[0].value
                                 +"' data-position='"+row[1].value
                                 +"' data-normal='"+row[2].value
                                 +"' data-visibility-attribute='invisible'>"+row[4].value
@@ -60,8 +61,8 @@
         });
 
         function filterWorkarea(event) {
-            const worksheet = getSelectedSheet('Hotspot');
-            worksheet.applyFilterAsync('Work Area',['Canopy'],'replace')
+            const worksheet = getSelectedSheet('Work Orders');
+            worksheet.applyFilterAsync('Work Area',[event.target.workarea],'replace')
 
         }
         
