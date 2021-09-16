@@ -82,8 +82,8 @@
     function clearWorkarea(event)
     {
         const worksheet = getSelectedSheet('Work Orders');
-        worksheet.applyFilterAsync('Work Area',[""],'all')
-        $('#model-viewer').remove(clearButton);
+        worksheet.applyFilterAsync('Work Area',[""],'all');
+        $('#clearbutton').remove();
 
     }
     
