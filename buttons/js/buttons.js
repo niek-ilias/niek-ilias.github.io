@@ -20,8 +20,6 @@
         });
     });
 
-
-   
      // This function creates a button for each row in the sheet
     function createButtons() {
 
@@ -65,13 +63,11 @@
 
     }
 
-//dsdfsdfs
-
     const clearButton = $("<button id='clearbutton'>Clear Filters</button>");
 
     function filterWorkarea(event) {
-        const worksheet = getSelectedSheet('Work Orders');
-        worksheet.applyFilterAsync('Work Area',[event.target.name],'replace');
+        const worksheet = getSelectedSheet('Work Area');
+        worksheet.selectMarksAsync('Work Area',[event.target.name],'replace');
         // Add our button to the model-viewer 
         clearButton.click(clearWorkarea);
         $('#model-viewer').append(clearButton);
@@ -81,8 +77,8 @@
 
     function clearWorkarea(event)
     {
-        const worksheet = getSelectedSheet('Work Orders');
-        worksheet.applyFilterAsync('Work Area',[""],'all');
+        const worksheet = getSelectedSheet('Work Area');
+        worksheet.selectMarksAsync('Work Area',[""],'all');
         $('#clearbutton').remove();
 
     }
