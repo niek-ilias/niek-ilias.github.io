@@ -65,7 +65,9 @@
 
     }
 
-    const clearButton = $("<button style='visibility:hidden' id='clearbutton'>Clear Filters</button>");
+//dsdfsdfs
+
+    const clearButton = $("<button id='clearbutton'>Clear Filters</button>");
 
     function filterWorkarea(event) {
         const worksheet = getSelectedSheet('Work Orders');
