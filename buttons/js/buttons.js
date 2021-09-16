@@ -61,20 +61,21 @@
 
         });
 
-        function filterWorkarea(event) {
-            const worksheet = getSelectedSheet('Work Orders');
-            worksheet.applyFilterAsync('Work Area',[event.target.name],'replace')
-
-        }
-
-        function clearFilters(event)
-        {
-
-            const worksheet = getSelectedSheet('Work Orders');
-            worksheet.clearFilterAsync('Work Area');
-
-        }
+     
         
+    }
+
+    function filterWorkarea(event) {
+        const worksheet = getSelectedSheet('Work Orders');
+        worksheet.applyFilterAsync('Work Area',[event.target.name],'replace')
+
+    }
+
+    function clearFilters(event)
+    {
+        const worksheet = getSelectedSheet('Work Orders');
+        worksheet.clearFilterAsync('Work Area');
+
     }
     
     // This function gets the worksheet
