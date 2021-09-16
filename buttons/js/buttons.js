@@ -80,7 +80,7 @@
     function clearWorkarea(event)
     {
         const worksheet = getSelectedSheet('Work Orders');
-        worksheet.applyFilterAsync('Work Area',"",'all')
+        worksheet.applyFilterAsync('Work Area',[""],'all')
 
     }
     
