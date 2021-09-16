@@ -26,6 +26,8 @@
         // The first step in choosing a sheet will be asking Tableau what sheets are available
         const worksheet = getSelectedSheet('Hotspot');
 
+        const clearButton = $("<button id='clearbutton'>Clear Filters</button>");
+
         // Call to get the selected marks for our sheet
         worksheet.getSummaryDataAsync().then(function(sumdata) {
         // Get the first DataTable for our selected marks (usually there is just one)
@@ -61,6 +63,10 @@
 
         });
 
+        // Add our button to the model-viewer 
+        clearButton.click(clearWorkarea);
+        $('#model-viewer').append(clearButton);
+
      
         
     }
@@ -71,10 +77,10 @@
 
     }
 
-    function clearFilters(event)
+    function clearWorkarea(event)
     {
         const worksheet = getSelectedSheet('Work Orders');
-        worksheet.clearFilterAsync('Work Area');
+        worksheet.applyFilterAsync('Work Area',"",'all')
 
     }
     
