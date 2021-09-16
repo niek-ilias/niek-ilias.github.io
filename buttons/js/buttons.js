@@ -20,19 +20,13 @@
         });
     });
 
-    const clearButton = $("<button style='visibility:hidden' id='clearbutton'>Clear Filters</button>");
 
-    // Add our button to the model-viewer 
-    clearButton.click(clearWorkarea);
-    $('#model-viewer').append(clearButton);
    
      // This function creates a button for each row in the sheet
     function createButtons() {
 
         // The first step in choosing a sheet will be asking Tableau what sheets are available
         const worksheet = getSelectedSheet('Hotspot');
-
-        worksheet.getSummaryColumnsInfoAsync().fieldName.find('KPI')
 
         // Call to get the selected marks for our sheet
         worksheet.getSummaryDataAsync().then(function(sumdata) {
@@ -71,10 +65,15 @@
 
     }
 
+    const clearButton = $("<button style='visibility:hidden' id='clearbutton'>Clear Filters</button>");
+
     function filterWorkarea(event) {
         const worksheet = getSelectedSheet('Work Orders');
         worksheet.applyFilterAsync('Work Area',[event.target.name],'replace');
-        clearButton.style.visibility ='visible';
+        // Add our button to the model-viewer 
+        clearButton.click(clearWorkarea);
+        $('#model-viewer').append(clearButton);
+       
 
     }
 
@@ -82,6 +81,7 @@
     {
         const worksheet = getSelectedSheet('Work Orders');
         worksheet.applyFilterAsync('Work Area',[""],'all')
+        $('#model-viewer').remove(clearButton);
 
     }
     
