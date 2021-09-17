@@ -13,7 +13,7 @@
             // Remove all buttons and recreate them based on new sheet
             const worksheet = getSelectedSheet('Hotspot');
             worksheet.addEventListener(tableau.TableauEventType.FilterChanged, function(){
-                document.getElementById("model-viewer").innerHTML = "";
+                document.getElementById("hotspots").innerHTML = "";
                 createButtons();
             });
 
@@ -54,7 +54,7 @@
     
                 // Add our button to the model-viewer 
                 button.click(filterWorkarea);
-                $('#model-viewer').append(button);
+                $('#hotspots').append(button);
 
             });
 
