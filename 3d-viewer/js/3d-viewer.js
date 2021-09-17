@@ -63,10 +63,13 @@
 
     }
 
+    // This is the clear button that will be created after selecting a hotspot
     const clearButton = $("<button class='reset' id='clearbutton'>Clear Filters</button>");
 
+    // This function resets the filter set by filterWorkarea
     function filterWorkarea(event) {
         const worksheet = getSelectedSheet('Work Orders');
+        // The work area related to the hotspot will be set
         worksheet.applyFilterAsync('Work Area',[event.target.name],'replace');
         // Add our button to the model-viewer 
         clearButton.click(clearWorkarea);
@@ -75,10 +78,13 @@
 
     }
 
+    // This function resets the filter set by filterWorkarea
     function clearWorkarea(event)
     {
         const worksheet = getSelectedSheet('Work Orders');
+        //All work areas will be selected
         worksheet.applyFilterAsync('Work Area',[""],'all');
+        //After clearing the filters the button will be removed
         $('#clearbutton').remove();
 
         
