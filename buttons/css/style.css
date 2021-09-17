@@ -4,6 +4,15 @@ model-viewer {
     margin: 0;
   }
 
+  .reset{
+    display: block;
+    color: grey;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid darkgrey;
+  }
+
   .workarea{
     display: block;
     border-radius: 50%;
