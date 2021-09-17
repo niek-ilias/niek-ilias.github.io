@@ -66,8 +66,8 @@
     const clearButton = $("<button id='clearbutton'>Clear Filters</button>");
 
     function filterWorkarea(event) {
-        const worksheet = getSelectedSheet('Work Orders');
-        worksheet.applyFilterAsync('Work Area',[event.target.name],'replace');
+        const worksheet = getSelectedSheet('Hotspot');
+        worksheet.selectMarksAsync('Work Area',[event.target.name],tableau.SelectionUpdateType.REPLACE);
         // Add our button to the model-viewer 
         clearButton.click(clearWorkarea);
         $('#model-viewer').append(clearButton);
@@ -77,9 +77,10 @@
 
     function clearWorkarea(event)
     {
-        const worksheet = getSelectedSheet('Work Orders');
-        worksheet.applyFilterAsync('Work Area',[""],'all');
+        const worksheet = getSelectedSheet('Hotspot');
+        worksheet.clearSelectedMarksAsync();
         $('#clearbutton').remove();
+
 
     }
     
