@@ -7,7 +7,7 @@
     <author name="ILIAS Defense Capability Management" email="niek.freriks@ilias-solutions.com" organization="ILIAS Solutions" website="https://www.ilias-solutions.com.com"/>
     <min-api-version>0.6</min-api-version>
     <source-location>
-      <url>https://niek-ilias.github.io/3d-viewer/index.html</url>
+      <url>https://is005vs03059.dev.ilias.local/3d-viewer/index.html</url>
     </source-location>
     <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAJlQTFRFAFp8AFl7XJWrmLzKlrvJPIGbAFh7CF+AudHb////+fv8TYujAFd6fau88/f58vf4j7bFGmuJAFh6LnaT6/L1y93kEGODToyk+vz8qcfTA1x9dKW3g66/m77L/f7+CmCBv9Xe8vb4On+ZHWyK3Ojt3uruHm2LJ3OQo8TQ+Pv77/X3BF1+Y5qvo8PPAlt9RIafjLXEirTDSYmh2rrtewAAAAFiS0dECfHZpewAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAB8SURBVBjTY2DADhhBAFmAiZmFhYWVDc5n5+Dk5OTi5kEI8PJx8gsIIjQJCYtwioohGcIjLsEpKYVkJo80J6eMELItspxyTDxIfHkFTkUlJBVsyiqcqmoIMxnVNTQ5taS1EUbqAJ3FqauHUKFvYGhoYITkDEY2IEDxGxIAAMSXBo5Sy2hnAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTEwLTEyVDE1OjQzOjE4KzAwOjAwXkpg9AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0xMC0xMlQxNTo0MzoxOCswMDowMC8X2EgAAABGdEVYdHNvZnR3YXJlAEltYWdlTWFnaWNrIDYuNy44LTkgMjAxNC0wNS0xMiBRMTYgaHR0cDovL3d3dy5pbWFnZW1hZ2ljay5vcmfchu0AAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OmhlaWdodAAxOTIPAHKFAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTUwNzgyMjk5OBJ3bFoAAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAxNy0xMC0xMi85ZDRlZTY0NDdjMDFmOGE5NDFlMzNhOTMxNTE4N2NkMS5pY28ucG5ne2h6SAAAAABJRU5ErkJggg==</icon>
   </dashboard-extension>

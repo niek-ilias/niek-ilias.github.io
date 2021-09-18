@@ -64,7 +64,7 @@
     }
 
     // This is the clear button that will be created after selecting a hotspot
-    const clearButton = $("<button class='reset' id='clearbutton'>Clear Filters</button>");
+    const clearButton = $("<button class='reset' id='clearbutton'>Clear Selected Work Area</button>");
 
     // This function resets the filter set by filterWorkarea
     function filterWorkarea(event) {
